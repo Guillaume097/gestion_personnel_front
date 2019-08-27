@@ -2,8 +2,8 @@
   "name": "gestion_personnel_front",
   "version": "0.1.0",
   "private": true,
+  "main": "app.js",
   "scripts": {
-    "main": "app.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
