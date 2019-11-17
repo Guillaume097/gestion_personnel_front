@@ -32,7 +32,7 @@ export default {
     postHoraire: async function() {
       let response = await fetch(`${this.apiURL}/horaire`, { headers: this.headers, method: 'POST', body: JSON.stringify({ name: this.horaire_add }) })
       this.$router.push({ name: 'listHoraire'})
-      //this.result = await response.json()
+      this.result = await response.json()
     },
     }
 }

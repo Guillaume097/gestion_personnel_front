@@ -37,8 +37,7 @@ export default {
   },
   watch: {
     '$route': function() {
-      this.getEmploye
-(this.id)
+      this.getEmploye(this.id)
     }
   },
   methods:{
@@ -51,7 +50,7 @@ export default {
     updateEmploye: async function(id) {
       let response = await fetch(`${this.apiURL}/employe/${id}`, { headers: this.headers, method: 'POST', body: JSON.stringify({ name: this.updateEmployeData.name }) })
       this.$router.push({ name: 'listEmploye'})
-      //this.updateEmployeData.result = await response.json()
+      this.updateEmployeData.result = await response.json()
     },
   }
 }

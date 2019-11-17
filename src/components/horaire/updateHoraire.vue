@@ -50,7 +50,7 @@ export default {
     updateHoraire: async function(id) {
       let response = await fetch(`${this.apiURL}/horaire/${id}`, { headers: this.headers, method: 'POST', body: JSON.stringify({ name: this.updateHoraireData.name }) })
       this.$router.push({ name: 'listHoraire'})
-      //this.updateCongeData.result = await response.json()
+      this.updateCongeData.result = await response.json()
     },
   }
 }

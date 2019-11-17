@@ -2,7 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
 
-import method from '/components/conge/method.vue';
+import method from './components/conge/method.vue';
 
 import listConge from './components/conge/listConge.vue';
 import createConge from './components/conge/createConge.vue';

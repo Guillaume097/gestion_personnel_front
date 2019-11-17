@@ -50,7 +50,7 @@ export default {
     updateConge: async function(id) {
       let response = await fetch(`${this.apiURL}/conge/${id}`, { headers: this.headers, method: 'POST', body: JSON.stringify({ name: this.updateCongeData.name }) })
       this.$router.push({ name: 'listConge'})
-      //this.updateCongeData.result = await response.json()
+      this.updateCongeData.result = await response.json()
     },
   }
 }

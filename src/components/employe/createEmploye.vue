@@ -32,7 +32,7 @@ export default {
     postEmploye: async function() {
       let response = await fetch(`${this.apiURL}/employe`, { headers: this.headers, method: 'POST', body: JSON.stringify({ name: this.employe_add }) })
       this.$router.push({ name: 'listEmploye'})
-      //this.result = await response.json()
+      this.result = await response.json()
     },
     }
 }

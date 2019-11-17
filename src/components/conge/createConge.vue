@@ -32,7 +32,7 @@ export default {
     postConge: async function() {
       let response = await fetch(`${this.apiURL}/conge`, { headers: this.headers, method: 'POST', body: JSON.stringify({ name: this.conge_add }) })
       this.$router.push({ name: 'listConge'})
-      //this.result = await response.json()
+      this.result = await response.json()
     },
     }
 }
